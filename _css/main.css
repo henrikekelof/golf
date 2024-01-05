@@ -1,0 +1,143 @@
+:root {
+  --background: #fff;
+  --text: #222;
+  --text-gray: #444;
+  --text-light: #999;
+  --bg-gray: #eee;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #222;
+    --text: #eee;
+    --text-gray: #ddd;
+    --text-light: #ccc;
+    --bg-gray: #333;
+  }
+}
+
+@supports (font: -apple-system-body) {
+  html {
+    font: -apple-system-body;
+  }
+}
+
+body {
+  background-color: var(--background);
+  color: var(--text);
+  font-family: "Open Sans";
+  font-size: 1em;
+  padding: 1em;
+  max-width: 35em;
+  margin: 0 auto;
+}
+
+.content p {
+  font-size: 1.2em;
+}
+
+.title {
+  height: 100vh;
+}
+.title img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  margin: 0 auto;
+}
+
+h1 {
+  font-family: "Open Sans";
+  color: var(--text-gray);
+  text-transform: uppercase;
+  letter-spacing: 0.01em;
+  text-align: center;
+}
+
+h3,
+.xxx {
+  font-family: "Vollkorn";
+  font-style: italic;
+  font-weight: 400;
+  font-size: 1.5em;
+  color: var(--text-light);
+  text-align: center;
+  margin: 0;
+}
+.xxxTitle {
+  letter-spacing: 0.1em;
+}
+
+hr {
+  height: 0;
+  border: none;
+  border-top: 3px dotted var(--text-light);
+  background-color: transparent;
+  color: transparent;
+}
+
+h2 {
+  font-family: "Oswald";
+  font-weight: 600;
+  font-size: 2em;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  text-align: center;
+  padding: 0 0 2em;
+  margin: 0 0 1em;
+  border-bottom: 3px dotted var(--text-light);
+}
+
+.scorecard {
+  border-collapse: collapse;
+  font-family: "Open Sans";
+}
+.scorecard caption {
+  /*font-family: "Oswald";*/
+  font-weight: 600;
+  font-size: 0.8em;
+  /*text-transform: uppercase;*/
+  letter-spacing: 0.1em;
+  text-align: center;
+  /*border-bottom: 3px dotted var(--text-light);*/
+}
+.scorecard th,
+.scorecard td {
+  border: 1px solid var(--text-light);
+  text-align: center;
+  vertical-align: middle;
+  line-height: 1;
+  padding: 0.05em;
+}
+.scorecard th {
+  font-size: 0.7em;
+  font-weight: 300;
+  text-transform: uppercase;
+}
+.scorecard th.h {
+  width: 4.5em;
+}
+.scorecard th.hl {
+  background-color: var(--bg-gray);
+}
+.scorecard th.hp {
+  width: 3em;
+  border-right: 2px solid var(--text-light);
+}
+.scorecard th.p {
+  width: 3em;
+  font-size: 1em;
+  font-weight: 700;
+}
+.scorecard td.l {
+  background-color: var(--bg-gray);
+}
+.scorecard td.p {
+  border-right: 2px solid var(--text-light);
+}
+.scorecard td.s {
+  font-family: Grandstander;
+  font-size: 1.3em;
+  font-weight: 600;
+  padding-top: 0.3em;
+}

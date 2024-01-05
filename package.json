@@ -1,0 +1,25 @@
+{
+  "name": "golf",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/henrikekelof/golf.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/henrikekelof/golf/issues"
+  },
+  "homepage": "https://github.com/henrikekelof/golf#readme",
+  "devDependencies": {
+    "@11ty/eleventy": "^2.0.1",
+    "prettier": "3.1.1"
+  },
+  "scripts": {
+    "build": "npx @11ty/eleventy",
+    "dev": "npx @11ty/eleventy --serve"
+  }
+}
