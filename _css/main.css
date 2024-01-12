@@ -3,6 +3,7 @@
   --text: #222;
   --text-gray: #444;
   --text-light: #999;
+  --link: #5c5cff;
   --bg-gray: #eee;
 }
 
@@ -12,6 +13,7 @@
     --text: #eee;
     --text-gray: #ddd;
     --text-light: #ccc;
+    --link: #7d7de8;
     --bg-gray: #333;
   }
 }
@@ -32,30 +34,41 @@ body {
   margin: 0 auto;
 }
 
-.content p {
-  font-size: 1.2em;
-}
-
-.title {
-  height: 100vh;
-}
-.title img {
+img {
   display: block;
   max-width: 100%;
   height: auto;
+}
+
+a:link, a:visited {
+  color: var(--link);
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
+
+a:focus-visible {
+  box-shadow: 0 0 0 2px var(--background);
+  outline: 2px solid var(--text);
+  outline-offset: 2px;
+}
+
+.content p:not([class]) {
+  font-size: 1.2em;
+}
+
+.cover {
+  height: 100vh;
+}
+.cover img {
   margin: 0 auto;
 }
 
-h1 {
-  font-family: "Open Sans";
-  color: var(--text-gray);
-  text-transform: uppercase;
-  letter-spacing: 0.01em;
-  text-align: center;
-}
 
 h3,
-.xxx {
+.subTitle,
+.cover__subTitle {
   font-family: "Vollkorn";
   font-style: italic;
   font-weight: 400;
@@ -64,7 +77,12 @@ h3,
   text-align: center;
   margin: 0;
 }
-.xxxTitle {
+
+.subTitle {
+  margin: 6em 0 0;
+}
+
+.cover__subTitle {
   letter-spacing: 0.1em;
 }
 
@@ -76,10 +94,14 @@ hr {
   color: transparent;
 }
 
+
+
+h1,
 h2 {
+  color: var(--text-gray);
   font-family: "Oswald";
   font-weight: 600;
-  font-size: 2em;
+  font-size: 3em;
   text-transform: uppercase;
   letter-spacing: 0.1em;
   text-align: center;
@@ -87,6 +109,12 @@ h2 {
   margin: 0 0 1em;
   border-bottom: 3px dotted var(--text-light);
 }
+
+h2 {
+  font-size: 2em;
+
+}
+
 
 .scorecard {
   border-collapse: collapse;
@@ -140,4 +168,13 @@ h2 {
   font-size: 1.3em;
   font-weight: 600;
   padding-top: 0.3em;
+}
+
+.footer {
+  margin: 4em 0;
+  padding: 1em 0 0;
+  border-top: 3px dotted var(--text-light);
+  font-family: "Vollkorn";
+  font-style: italic;
+  color: var(--text-light);
 }
