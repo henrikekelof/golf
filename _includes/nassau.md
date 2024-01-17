@@ -18,12 +18,12 @@ Man kan om man vill ha olika insatser på olika delar av ronden, men vanligtvis 
 Press är ett sidobet som tillägg till det ursprungliga. Det kan göras för samtliga tre bet i en Nassau.
 
 Då en spelare är två ner i en match eller ett bestämt antal slag eller poäng efter beroende på spelform
-kan denne "pressa". En ny match startas då med samma insats som den ursprungliga. En press kan också
-pressas enligt samma regler.
+kan denne "pressa". En ny match startas då med samma insats som den ursprungliga. Press betyder i princip
+kvitt eller dubbelt på hålen som återstår. En press kan också pressas enligt samma regler.
 
 Bestäm innan spelet om en press ska vara tvingande eller om motståndaren måste godkänna den för att den ska gälla.
 
 Press måste begäras innan någon spelare har slagit ut på det hål från vilken den ska gälla.
 
-Bestäm också om det är fritt att pressa när som helst eller om det endast ska gälla
+Bestäm också om det är fritt att pressa när som helst eller om det endast ska vara möjligt
 t.ex. på de sista fyra hålen.

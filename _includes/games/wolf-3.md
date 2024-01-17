@@ -2,7 +2,7 @@
 
 Läs först reglerna för [Wolf (fyra spelare)](#wolf-4).
 
-När man spelar man Wolf på tre så kommer det alltid vara en mot två.
+När man spelar Wolf på tre så kommer det alltid vara en mot två.
 
 #### Poäng
 
