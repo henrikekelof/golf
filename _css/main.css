@@ -5,6 +5,7 @@
   --text-light: #999;
   --link: #5c5cff;
   --bg-gray: #eee;
+  --bg-blue: #ade8f3;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -15,6 +16,7 @@
     --text-light: #ccc;
     --link: #7d7de8;
     --bg-gray: #333;
+    --bg-blue: #10424b;
   }
 }
 
@@ -29,6 +31,7 @@ body {
   color: var(--text);
   font-family: "Open Sans";
   font-size: 1em;
+  line-height: 1.4;
   padding: 1em;
   max-width: 35em;
   margin: 0 auto;
@@ -55,11 +58,29 @@ a:focus-visible {
 }
 
 .content p:not([class]) {
-  font-size: 1.2em;
+  font-size: 1.1em;
+  margin: 1em 0;
+}
+
+ul {
+  list-style-type: square;
+  margin: 1em 0 2em;
+  padding: 0 0 0 1.5em;
+}
+
+li {
+  font-size: 1.1em;
+  margin: 0.5em 0;
+  padding: 0;
+}
+
+li > p {
+  font-size: 1em !important;
+  margin: 0;
 }
 
 .cover {
-  height: 100vh;
+  min-height: 90vh;
 }
 .cover img {
   margin: 0 auto;
@@ -68,6 +89,7 @@ a:focus-visible {
 
 h3,
 .subTitle,
+.cover__heading,
 .cover__subTitle {
   font-family: "Vollkorn";
   font-style: italic;
@@ -78,12 +100,47 @@ h3,
   margin: 0;
 }
 
+.titleAliases {
+  font-family: "Vollkorn";
+  font-style: italic;
+  font-weight: 200;
+  font-size: 1em;
+  color: var(--text-light);
+  text-align: center;
+  margin: 0;
+}
+
+h3 {
+  margin: 3em 0 0.5em;
+}
+
 .subTitle {
   margin: 6em 0 0;
 }
 
+.cover__heading,
 .cover__subTitle {
   letter-spacing: 0.1em;
+  margin: 2em 0 1em
+}
+.cover__subTitle {
+  text-transform: uppercase;
+}
+
+h4 {
+  /*font-family: "Vollkorn";*/
+  /*font-style: italic;*/
+  /*font-weight: 400;*/
+  /*font-size: 1.2em;*/
+  /*color: var(--text-light);*/
+  /*text-align: center;*/
+  /*margin: 2em 0 0.5em;*/
+
+  font-family: "Open Sans";
+  font-weight: 600;
+  font-size: 1.2em;
+  color: var(--text-light);
+  margin: 2em 0 0.5em;
 }
 
 hr {
@@ -105,37 +162,73 @@ h2 {
   text-transform: uppercase;
   letter-spacing: 0.1em;
   text-align: center;
-  padding: 0 0 2em;
+  padding: 0 0 1em;
   margin: 0 0 1em;
   border-bottom: 3px dotted var(--text-light);
 }
 
 h2 {
   font-size: 2em;
-
 }
 
+.toc {
+  font-size: 0.875em;
+  width: fit-content;
+  margin: 0 auto;
+}
+.toc h4 {
+  margin: 1em 0 0;
+}
+
+.toc ul {
+  list-style-type: none;
+  margin: 0 0 0.5em;
+  padding: 0;
+}
+
+.toc a {
+  color: var(--text-gray);
+}
+
+.toc a:hover {
+  color: var(--link);
+}
+
+table {
+  border-collapse: collapse;
+  font-family: "Open Sans";
+}
+
+th, td {
+  text-align: left;
+  border: 1px solid var(--text-light);
+  padding: 0.25em 0.5em;
+}
 
 .scorecard {
   border-collapse: collapse;
   font-family: "Open Sans";
+  margin: 2em 0;
 }
 .scorecard caption {
   /*font-family: "Oswald";*/
   font-weight: 600;
-  font-size: 0.8em;
+  font-size: 0.9em;
   /*text-transform: uppercase;*/
-  letter-spacing: 0.1em;
+  /*letter-spacing: 0.1em;*/
   text-align: center;
+  margin: 0 0 0.5em;
   /*border-bottom: 3px dotted var(--text-light);*/
 }
 .scorecard th,
 .scorecard td {
+  position: relative;
   border: 1px solid var(--text-light);
   text-align: center;
   vertical-align: middle;
   line-height: 1;
   padding: 0.05em;
+  white-space: nowrap;
 }
 .scorecard th {
   font-size: 0.7em;
@@ -146,7 +239,7 @@ h2 {
   width: 4.5em;
 }
 .scorecard th.hl {
-  background-color: var(--bg-gray);
+  background-color: var(--bg-blue);
 }
 .scorecard th.hp {
   width: 3em;
@@ -157,9 +250,33 @@ h2 {
   font-size: 1em;
   font-weight: 700;
 }
+.scorecard--points th.p {
+  width: 4.5em;
+}
+
+.scorecard--points td:nth-child(4),
+.scorecard--points td:nth-child(6),
+.scorecard--points td:nth-child(8) {
+  width: 1.9em;
+}
+
 .scorecard td.l {
+  background-color: var(--bg-blue);
+}
+
+.scorecard--points th:nth-child(4),
+.scorecard--points td:nth-child(4),
+.scorecard--points td:nth-child(5),
+.scorecard--points th:nth-child(6),
+.scorecard--points td:nth-child(8),
+.scorecard--points td:nth-child(9),
+.scorecard:not(.scorecard--points) th:nth-child(4),
+.scorecard:not(.scorecard--points) td:nth-child(4),
+.scorecard:not(.scorecard--points) th:nth-child(6),
+.scorecard:not(.scorecard--points) td:nth-child(6) {
   background-color: var(--bg-gray);
 }
+
 .scorecard td.p {
   border-right: 2px solid var(--text-light);
 }
@@ -167,7 +284,20 @@ h2 {
   font-family: Grandstander;
   font-size: 1.3em;
   font-weight: 600;
-  padding-top: 0.3em;
+  /*padding-top: 0.3em;*/
+  padding: 0.3em 0.1em 0;
+}
+
+.scorecard td.birdie:after {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 1em;
+  height: 1em;
+  border-radius: 50%;
+  inset: 50% auto auto 50%;
+  transform: translate(-50%, -50%);
+  border: 2px solid currentColor;
 }
 
 .footer {

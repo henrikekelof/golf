@@ -1,3 +1,5 @@
+<span id="nassau"></span>
+
 ### Nassau
 
 En Nassau är tre separata bet på en runda och kan kombineras med de flesta spelformer.
@@ -6,8 +8,10 @@ Ursprungligen användes det i samband med matchspel.
 Bet görs för första nio, sista nio och för hela rundan.
 Den som misslyckas på första nio får på så sätt en ny chans på sista.
 
-Storleken på bet uttrycks som t.ex. 20-20-20.
+Storleken på bet uttrycks som t.ex. 20-20-20 vilket betyder 20 kr första nio, 20 på sista nio och 20 på totalen.
 Man kan om man vill ha olika insatser på olika delar av ronden, men vanligtvis har man samma.
+
+<span id="nassau-press"></span>
 
 ### Nassau Press
 
@@ -22,4 +26,4 @@ Bestäm innan spelet om en press ska vara tvingande eller om motståndaren måst
 Press måste begäras innan någon spelare har slagit ut på det hål från vilken den ska gälla.
 
 Bestäm också om det är fritt att pressa när som helst eller om det endast ska gälla
-t.ex. sista fyra hålen eller liknande.
+t.ex. på de sista fyra hålen.

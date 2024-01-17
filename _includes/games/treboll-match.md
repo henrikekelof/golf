@@ -1,7 +1,9 @@
 ### Treboll match
 
+Läs först reglerna för [Matchspel](#match).
+
 Individuella matcher spelas mellan alla spelare vilket innebär att
-varje spelare spelar två matcher samtidigt.
+varje spelare spelar två matcher samtidigt. Handicap reduceras inte.
 
 Normala regler för matchspel gäller. Om en situation uppstår där regler för en match
 hamnar i konflikt med en annan måste båda hanteras.

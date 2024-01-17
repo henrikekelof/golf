@@ -1,8 +1,11 @@
 ### Bäst/sämst 
 
-Fyrboll, matchspel där lagens bästa resultat på varje hål räknas mot varandra och de sämsta mot varandra. 
+Läs först reglerna för [Matchspel](#match).
+
+Bäst/sämst liknar [Fyrboll match](#fyrboll), men förutom att räkna lagens bästa boll mot varandra räknas även de sämsta.
 Ett lag kan alltså vinna två poäng på varje hål.
 
-HCP bör reduceras till 90%. Spelaren med lägst handicap blir nollställd och övriga spelares HCP 
-justeras med motsvarande. Exempel: Spelare A har 6 erhållna slag, B har 9, C har 7 och D har 14. 
-A nollställs och B får då 9 - 6 = 3 slag, C får 1 och D 8.
+Handicap reduceras till 90% av antalet erhållna slag. Utgå från spelaren med lägst handicap. Sätt denne till noll
+och reducera övriga spelares erhållna slag med motsvarande. Exempel: Spelare A har 6 erhållna slag, 
+B har 9, C har 7 och D har 14. A nollställs och tappar 6 slag. B får då 9 - 6 = 3 slag. På samma sätt får C 1 slag 
+och D 8 slag.
